@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def create_cues_list(cues_txt_file):
     """
     Створює список стимулів із зазначеного текстового файлу.
@@ -13,6 +14,7 @@ def create_cues_list(cues_txt_file):
             cue = parts[1].split('[')[0].strip()  # Відокремлює назву до дужки
             cues_list.append(cue)
     return cues_list
+
 
 def add_root_to_csv(input_csv_file, node_mapping_file, cues_list, output_csv_file):
     """

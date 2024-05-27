@@ -1,5 +1,6 @@
 import re
 
+
 def format_reaction(reaction_line):
     # Розділяємо назву реакції і список стимулів
     reaction, stimuli_part = reaction_line.split(':', 1)

@@ -1,5 +1,6 @@
 import fitz  # PyMuPDF
 
+
 def extract_and_convert(pdf_path, output_path, start_page, end_page):
     document = fitz.open(pdf_path)
 
@@ -40,9 +41,11 @@ for char in characters:
     if char not in bad_encoding_signs:
         bad_encoding_signs.append(char)
 
+
 # Функція для перевірки, чи містить строка символи неправильного кодування
 def contains_bad_encoding(line, signs):
     return any(sign in line for sign in signs)
+
 
 def clean(text_file):
     with open(text_file, 'r', encoding='utf-8') as file:

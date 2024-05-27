@@ -114,6 +114,7 @@ def merge_files(words_file_path, numbers_file_path, output_file_path):
 
         print(f"Об'єднаний файл створено у {output_file_path}")
 
+
 # Витягуємо числа
 titles = extract_numbers("source/ukr_slovnik1.pdf", 29, 345)
 # Вставляємо правильний рядок
